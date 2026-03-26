@@ -251,8 +251,74 @@
   .navbar__hamburger {
     display: flex;
   }
-  .navbar__actions .btn:not(.btn--primary) {
+  .navbar__actions .btn {
     display: none;
+  }
+  
+  .navbar__inner {
+    height: 60px;
+    gap: var(--space-3);
+  }
+  
+  .navbar__logo {
+    gap: var(--space-2);
+  }
+  
+  .navbar__logo-img {
+    height: 45px;
+  }
+  
+  .navbar__logo-name {
+    font-size: var(--text-sm);
+  }
+  
+  .navbar__logo-title {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__inner {
+    height: 54px;
+    gap: var(--space-2);
+  }
+  
+  .navbar__logo {
+    gap: var(--space-1);
+  }
+  
+  .navbar__logo-img {
+    height: 38px;
+  }
+  
+  .navbar__logo-name {
+    font-size: 13px;
+  }
+  
+  .navbar__logo-title {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__inner {
+    height: 50px;
+  }
+  
+  .navbar__logo-img {
+    height: 32px;
+  }
+  
+  .navbar__logo-text {
+    display: none;
+  }
+  
+  .navbar__hamburger {
+    padding: var(--space-1);
+  }
+  
+  .navbar__hamburger span {
+    width: 20px;
   }
 }
 

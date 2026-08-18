@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <!-- =====================================================
+       META & SEO
+       ===================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>¿Qué es la Epigenética? Guía Completa — Dra. Erika Piedrahita</title>
+  <meta name="description" content="Epigenética: qué es, cómo tus hábitos activan o silencian tus genes y qué hace un médico epigenetista. Consulta en Medellín o virtual en Colombia." />
+  <meta name="keywords" content="epigenética, qué es la epigenética, medicina epigenética, médico epigenetista, epigenética Medellín, epigenética Colombia, nutrigenómica, cómo influyen los hábitos en los genes, Erika Piedrahita" />
+  <meta name="author" content="Dra. Erika Piedrahita" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.draerikapiedrahita.com/epigenetica/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:url"         content="https://www.draerikapiedrahita.com/epigenetica/" />
+  <meta property="og:title"       content="¿Qué es la Epigenética? Guía Completa — Dra. Erika Piedrahita" />
+  <meta property="og:description" content="Descubre qué es la epigenética, cómo tus hábitos hablan con tus genes y qué hace un médico epigenetista. Consulta en Medellín o virtual en toda Colombia." />
+  <meta property="og:image"       content="https://www.draerikapiedrahita.com/assets/img/og-image.png" />
+  <meta property="og:locale"      content="es_CO" />
+  <meta property="og:site_name"   content="Dra. Erika Piedrahita" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:url"         content="https://www.draerikapiedrahita.com/epigenetica/" />
+  <meta name="twitter:title"       content="¿Qué es la Epigenética? — Dra. Erika Piedrahita" />
+  <meta name="twitter:description" content="Tus genes no son tu destino. Guía completa sobre epigenética, nutrigenómica y medicina epigenética con la Dra. Erika Piedrahita." />
+  <meta name="twitter:image"       content="https://www.draerikapiedrahita.com/assets/img/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+
+  <!-- Page-specific styles (small additions on top of the shared design system) -->
+  <style>
+    /* Los CTA de esta página tienen textos largos: en pantallas
+       angostas deben poder partirse en varias líneas. */
+    @media (max-width: 700px) {
+      .btn {
+        white-space: normal;
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    /* Compact hero for this landing page */
+    .hero.page-hero {
+      min-height: auto;
+      padding-block: var(--space-16) var(--space-20);
+    }
+    @media (max-width: 600px) {
+      .hero.page-hero { padding-block: var(--space-10) var(--space-12); }
+    }
+
+    /* Breadcrumb */
+    .breadcrumb-bar {
+      background-color: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      padding-block: var(--space-3);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+    .breadcrumb-nav a { color: var(--color-primary); font-weight: 600; }
+    .breadcrumb-nav a:hover { color: var(--color-primary-dark); }
+    .breadcrumb-nav span { color: var(--color-text); font-weight: 600; }
+
+    /* Prose blocks */
+    .prose {
+      max-width: 760px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .prose p {
+      font-size: var(--text-lg);
+      line-height: 1.8;
+      color: var(--color-text-muted);
+    }
+    .prose p strong { color: var(--color-text); font-weight: 600; }
+    .prose a { color: var(--color-primary-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+    .prose a:hover { color: var(--color-primary); }
+
+    .prose__lead {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: var(--text-xl);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    /* Analogy callout box */
+    .analogy-box {
+      max-width: 760px;
+      margin-inline: auto;
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-primary);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6) var(--space-7);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .analogy-box__title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: var(--text-lg);
+      color: var(--color-text);
+    }
+    .analogy-box p {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* Habit sub-sections grid */
+    .habits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+    }
+    @media (max-width: 700px) {
+      .habits-grid { grid-template-columns: 1fr; max-width: 500px; margin-inline: auto; }
+    }
+    .habit-card h3 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: var(--text-lg);
+      color: var(--color-text);
+      margin-bottom: var(--space-2);
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .habit-card h3 .habit-card__icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .habit-card h3 .habit-card__icon svg { width: 16px; height: 16px; }
+    .habit-card p {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* Comparison table */
+    .compare-table-wrap {
+      max-width: 800px;
+      margin-inline: auto;
+      overflow-x: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+    table.compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--color-white);
+      font-size: var(--text-base);
+      min-width: 480px;
+    }
+    table.compare-table caption {
+      text-align: left;
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      padding: var(--space-3) var(--space-5) 0;
+    }
+    table.compare-table th,
+    table.compare-table td {
+      padding: var(--space-4) var(--space-5);
+      text-align: left;
+      border-bottom: 1px solid var(--color-border);
+      line-height: 1.6;
+    }
+    table.compare-table thead th {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--color-white);
+      background-color: var(--color-primary-dark);
+    }
+    table.compare-table tbody th {
+      font-weight: 600;
+      color: var(--color-text);
+      background-color: var(--color-surface);
+      white-space: nowrap;
+    }
+    table.compare-table td { color: var(--color-text-muted); }
+    table.compare-table tbody tr:last-child th,
+    table.compare-table tbody tr:last-child td { border-bottom: none; }
+
+    /* En móvil la tabla no cabe en 3 columnas: se apila por filas,
+       usando data-label para no perder el encabezado de cada celda. */
+    @media (max-width: 720px) {
+      .compare-table-wrap { overflow-x: visible; }
+      table.compare-table { min-width: 0; }
+      table.compare-table thead {
+        position: absolute;
+        width: 1px; height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      table.compare-table tr { display: block; border-bottom: 1px solid var(--color-border); }
+      table.compare-table tbody tr:last-child { border-bottom: none; }
+      table.compare-table tbody th {
+        display: block;
+        white-space: normal;
+        font-family: var(--font-heading);
+        font-size: var(--text-lg);
+        border-bottom: none;
+      }
+      table.compare-table td {
+        display: block;
+        border-bottom: none;
+        padding-block: var(--space-2);
+      }
+      table.compare-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: var(--text-xs);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--color-primary-dark);
+        margin-bottom: 0.25rem;
+      }
+      table.compare-table tbody tr td:last-child { padding-bottom: var(--space-5); }
+    }
+
+    /* Bridge to test epigenético */
+    .bridge-box {
+      max-width: 800px;
+      margin-inline: auto;
+      background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent-light));
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+    }
+    .bridge-box p {
+      font-size: var(--text-lg);
+      color: var(--color-text);
+      line-height: 1.75;
+      max-width: 640px;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      max-width: 800px;
+      margin-inline: auto;
+    }
+    .faq-item {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-item summary {
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: var(--text-lg);
+      color: var(--color-text);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      line-height: 1;
+      color: var(--color-primary);
+      flex-shrink: 0;
+      transition: transform var(--transition-fast);
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p {
+      margin-top: var(--space-3);
+      color: var(--color-text-muted);
+      font-size: var(--text-base);
+      line-height: 1.75;
+    }
+
+    .final-cta-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+
+  <!-- Structured Data — Epigenética -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "¿Qué es la Epigenética? Guía Completa — Dra. Erika Piedrahita",
+      "url": "https://www.draerikapiedrahita.com/epigenetica/",
+      "description": "Guía completa sobre qué es la epigenética, cómo tus hábitos activan o silencian tus genes, qué es la nutrigenómica y qué hace un médico epigenetista.",
+      "inLanguage": "es",
+      "lastReviewed": "2026-08-18",
+      "author": {
+        "@type": "Physician",
+        "name": "Dra. Erika Piedrahita",
+        "url": "https://www.draerikapiedrahita.com",
+        "telephone": "+573002228514",
+        "image": "https://www.draerikapiedrahita.com/assets/img/og-image.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Medellín",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        },
+        "sameAs": [
+          "https://www.instagram.com/dra.erikapiedrahita/",
+          "https://www.tiktok.com/@dra.erikapiedrahita"
+        ],
+        "medicalSpecialty": "Epigenética y Medicina Integrativa",
+        "knowsAbout": ["epigenética", "nutrigenómica", "medicina del estilo de vida", "salud integrativa", "bienestar personalizado"],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificación",
+          "name": "Lifestyle Medicine",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Harvard T.H. Chan School of Public Health"
+          }
+        }
+      },
+      "publisher": {
+        "@type": "Physician",
+        "name": "Dra. Erika Piedrahita",
+        "url": "https://www.draerikapiedrahita.com",
+        "telephone": "+573002228514",
+        "image": "https://www.draerikapiedrahita.com/assets/img/og-image.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Medellín",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        },
+        "medicalSpecialty": "Epigenética y Medicina Integrativa"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿La epigenética es ciencia comprobada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La epigenética es un campo de la biología molecular con décadas de investigación científica revisada por pares. Estudia mecanismos bien documentados, como la metilación del ADN y la modificación de histonas, que regulan la expresión de los genes sin alterar la secuencia del ADN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Los cambios epigenéticos se heredan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Algunas marcas epigenéticas pueden transmitirse entre generaciones, aunque la mayoría se reprograman entre padres e hijos. Es un área activa de investigación. Lo que sí es claro es que las marcas epigenéticas propias no son permanentes: pueden modificarse a lo largo de la vida con cambios sostenidos de hábitos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En cuánto tiempo se ven cambios epigenéticos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de cada persona, del hábito y de la constancia. Algunos marcadores relacionados con inflamación o estrés pueden mostrar cambios en semanas de sostener nuevos hábitos, mientras que otros procesos toman meses. Por eso el seguimiento y el acompañamiento profesional son clave."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La medicina epigenética reemplaza a mi médico tratante?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La medicina epigenética es complementaria a tu tratamiento médico habitual. No sustituye diagnósticos, medicamentos ni el seguimiento de tu médico tratante; trabaja de la mano con ellos para fortalecer tus hábitos y tu bienestar general."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito un test epigenético para empezar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No es obligatorio, pero es una excelente forma de partir de datos objetivos sobre tu estado actual. Puedes iniciar una consulta de epigenética sin test, y valorar más adelante si quieres complementarla con la medición."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre epigenética y medicina funcional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ambas buscan la raíz de los síntomas en lugar de solo tratarlos, pero la epigenética se enfoca específicamente en cómo tus hábitos y tu entorno modifican la expresión de tus genes, usando esa información como guía para personalizar el plan de nutrición, hábitos y suplementación."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.draerikapiedrahita.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Epigenética",
+          "item": "https://www.draerikapiedrahita.com/epigenetica/"
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       TOPBAR
+       ===================================================== -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <!-- Left: social links -->
+      <div class="topbar__links">
+        <a href="https://wa.me/573002228514" class="topbar__link" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+          <!-- WhatsApp icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/dra.erikapiedrahita/" class="topbar__link" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro Instagram">
+          <!-- Instagram icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+      <!-- Right: hours -->
+      <div class="topbar__hours">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+        Lun–Vie 8am–6pm
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       NAVBAR (Sticky)
+       ===================================================== -->
+  <header class="navbar" role="banner">
+    <nav class="container navbar__inner" aria-label="Navegación principal">
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="Inicio — Dra. Erika Piedrahita">
+        <img src="/assets/img/IMG_6680.PNG" alt="Logo Dra. Erika Piedrahita" class="navbar__logo-img" width="360" height="120" />
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">Dra. Erika Piedrahita</span>
+          <span class="navbar__logo-title">Médica Epigenética</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="navbar__nav" role="list">
+        <li><a href="/"                    class="navbar__nav-link">Inicio</a></li>
+        <li><a href="/#quien-soy"          class="navbar__nav-link">Quién Soy</a></li>
+        <li><a href="/epigenetica/"        class="navbar__nav-link active" aria-current="page">Epigenética</a></li>
+        <li><a href="/#servicios"          class="navbar__nav-link">Servicios</a></li>
+        <li><a href="/test-epigenetico/"   class="navbar__nav-link">Test Epigenético</a></li>
+        <li><a href="/#aprende"            class="navbar__nav-link">Aprende</a></li>
+        <li><a href="/#contacto"           class="navbar__nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <div class="navbar__actions">
+        <a href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          <!-- Calendar icon -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8"  y1="2" x2="8"  y2="6"/>
+            <line x1="3"  y1="10" x2="21" y2="10"/>
+          </svg>
+          Agendar Cita
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar__hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Menú móvil">
+      <ul class="navbar__mobile-links" role="list">
+        <li><a href="/"                  class="navbar__mobile-link">Inicio</a></li>
+        <li><a href="/#quien-soy"        class="navbar__mobile-link">Quién Soy</a></li>
+        <li><a href="/epigenetica/"      class="navbar__mobile-link" aria-current="page">Epigenética</a></li>
+        <li><a href="/#servicios"        class="navbar__mobile-link">Servicios</a></li>
+        <li><a href="/test-epigenetico/" class="navbar__mobile-link">Test Epigenético</a></li>
+        <li><a href="/#aprende"          class="navbar__mobile-link">Aprende</a></li>
+        <li><a href="/#contacto"         class="navbar__mobile-link">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn btn--primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener noreferrer">
+        Agendar Cita
+      </a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">Epigenética</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+  <main id="main-content">
+
+    <!-- =================================================
+         HERO
+         ================================================= -->
+    <section class="hero page-hero" aria-label="Epigenética">
+      <div class="container hero__inner">
+
+        <!-- Badge -->
+        <div class="hero__badge animate-fadeInUp">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Guía de Epigenética · Medellín y Online
+        </div>
+
+        <!-- Heading -->
+        <h1 class="hero__title animate-fadeInUp delay-200">
+          ¿Qué es la epigenética?<br />
+          Tus genes no son <em>tu destino</em>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero__subtitle animate-fadeInUp delay-300">
+          Descubre cómo la alimentación, el estrés, el sueño y tu entorno pueden
+          activar o silenciar tus genes, y qué hace exactamente un médico
+          epigenetista para ayudarte a transformar tu salud desde la raíz.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__cta-group animate-fadeInUp delay-400">
+          <a href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20saber%20m%C3%A1s%20sobre%20medicina%20epigen%C3%A9tica" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <!-- WhatsApp icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Quiero saber más sobre medicina epigenética
+          </a>
+          <a href="#que-es-la-epigenetica" class="btn btn--secondary btn--lg">
+            ¿Qué es?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================
+         QUÉ ES LA EPIGENÉTICA
+         ================================================= -->
+    <section class="section" id="que-es-la-epigenetica" aria-labelledby="que-es-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">La base de todo</span>
+          <h2 class="section-title" id="que-es-title">¿Qué es la epigenética?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="prose reveal">
+          <p class="prose__lead">
+            La epigenética es la ciencia que estudia cómo tu estilo de vida y tu entorno
+            "hablan" con tus genes, sin cambiar la secuencia de tu ADN.
+          </p>
+          <p>
+            Piensa en tu ADN como un enorme libro de instrucciones que heredaste de tus
+            padres: contiene todos los genes que podrías llegar a expresar. Pero no todos
+            esos genes están "encendidos" al mismo tiempo. El <strong>epigenoma</strong> es
+            una capa de interruptores químicos que se posan sobre ese libro y deciden qué
+            páginas se leen en voz alta y cuáles quedan en silencio. Esos interruptores
+            responden, en gran parte, a cómo vives: qué comes, cuánto duermes, cuánto estrés
+            manejas y a qué estás expuesto todos los días.
+          </p>
+          <p>
+            Los dos mecanismos más estudiados son la <strong>metilación del ADN</strong>
+            (pequeñas moléculas que se adhieren al ADN y pueden "apagar" un gen) y las
+            <strong> modificaciones de las histonas</strong> (las proteínas alrededor de las
+            cuales se enrolla el ADN, que al cambiar de forma abren o cierran el acceso a
+            ciertos genes). No necesitas memorizar los términos técnicos: lo importante es
+            entender que estos mecanismos son el lenguaje bioquímico con el que tus hábitos
+            "le hablan" a tus genes día a día.
+          </p>
+        </div>
+
+        <div class="analogy-box reveal" style="margin-top: var(--space-8);">
+          <p class="analogy-box__title">La analogía más sencilla: hardware y software</p>
+          <p>
+            Si tu ADN fuera el <strong>hardware</strong> de un computador, la epigenética
+            sería el <strong>software</strong> que decide cómo se usa ese hardware. O, si lo
+            prefieres en términos musicales: tu ADN es la partitura fija que heredaste, y la
+            epigenética es el intérprete que decide qué notas suenan más fuerte, cuáles se
+            silencian y con qué ritmo se toca la pieza cada día. La partitura no cambia, pero
+            la interpretación sí — y esa interpretación puede transformar por completo cómo
+            suena (y cómo se siente) tu cuerpo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         CÓMO INFLUYEN TUS HÁBITOS
+         ================================================= -->
+    <section class="section epigenetics bg-surface" id="habitos-y-genes" aria-labelledby="habitos-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Tu día a día, en acción</span>
+          <h2 class="section-title" id="habitos-title">¿Cómo influyen tus hábitos en tus genes?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Cada decisión cotidiana envía una señal a tu epigenoma. Estos son los
+            factores con mayor evidencia de impacto sobre la expresión génica.
+          </p>
+        </div>
+
+        <div class="habits-grid reveal">
+          <div class="habit-card">
+            <h3>
+              <span class="habit-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </span>
+              Alimentación
+            </h3>
+            <p>
+              Nutrientes como el folato, la vitamina B12 y los compuestos de vegetales
+              crucíferos participan directamente en las reacciones químicas que
+              regulan la metilación del ADN. Comer de forma consciente no solo nutre
+              tus células: envía instrucciones a tus genes.
+            </p>
+          </div>
+          <div class="habit-card">
+            <h3>
+              <span class="habit-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </span>
+              Estrés
+            </h3>
+            <p>
+              El estrés crónico eleva el cortisol de forma sostenida, y ese cortisol
+              puede activar genes relacionados con la inflamación. Un estrés puntual
+              no es el problema; el que se mantiene semana tras semana sí deja huella
+              en la expresión de tus genes.
+            </p>
+          </div>
+          <div class="habit-card">
+            <h3>
+              <span class="habit-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              Sueño
+            </h3>
+            <p>
+              Mientras duermes, tu cuerpo activa procesos de reparación y regulación
+              hormonal que dependen de genes específicos. Dormir mal de forma
+              recurrente altera esos ciclos y puede desregular genes ligados al
+              metabolismo y al sistema inmune.
+            </p>
+          </div>
+          <div class="habit-card">
+            <h3>
+              <span class="habit-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              Actividad física
+            </h3>
+            <p>
+              El ejercicio regular, incluso en dosis moderadas, activa genes
+              relacionados con la producción de energía celular y la reducción de la
+              inflamación. El cuerpo interpreta el movimiento como una señal de
+              adaptación y salud.
+            </p>
+          </div>
+          <div class="habit-card">
+            <h3>
+              <span class="habit-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+              </span>
+              Entorno y tóxicos
+            </h3>
+            <p>
+              La exposición a humo de cigarrillo, contaminación, pesticidas o
+              disruptores hormonales presentes en algunos plásticos también deja
+              marcas epigenéticas. Reducir esa exposición es, en sí mismo, un hábito
+              de salud.
+            </p>
+          </div>
+          <div class="habit-card">
+            <h3>
+              <span class="habit-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </span>
+              Vínculos y bienestar emocional
+            </h3>
+            <p>
+              Las relaciones cercanas, el sentido de propósito y el manejo emocional
+              también son parte de la ecuación. Tu biología no distingue entre "solo
+              mental" y "solo físico": todo se traduce, tarde o temprano, en señales
+              que llegan a tus genes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         NUTRIGENÓMICA
+         ================================================= -->
+    <section class="section" id="nutrigenomica" aria-labelledby="nutrigenomica-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Comer con información</span>
+          <h2 class="section-title" id="nutrigenomica-title">Nutrigenómica: comer para tus genes</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="prose reveal">
+          <p>
+            La <strong>nutrigenómica</strong> es una rama específica dentro del campo más
+            amplio de la epigenética. Mientras que la epigenética estudia todos los factores
+            que influyen en la expresión génica (estrés, sueño, entorno, movimiento y más),
+            la nutrigenómica se enfoca puntualmente en cómo los <strong>alimentos y
+            nutrientes</strong> interactúan con tus genes.
+          </p>
+          <p>
+            En términos prácticos, esto significa que no existe una dieta única que le
+            sirva a todo el mundo por igual. Dos personas pueden responder de forma distinta
+            al mismo alimento según cómo se esté expresando su información genética en ese
+            momento. La nutrigenómica busca precisamente eso: entender qué necesita tu
+            cuerpo hoy, con base en información real, para diseñar una alimentación que
+            trabaje a tu favor en lugar de en tu contra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         QUÉ ES LA MEDICINA EPIGENÉTICA
+         ================================================= -->
+    <section class="section bg-surface" id="medicina-epigenetica" aria-labelledby="medicina-epigenetica-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">De la teoría a la consulta</span>
+          <h2 class="section-title" id="medicina-epigenetica-title">¿Qué es la medicina epigenética?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="prose reveal">
+          <p>
+            La <strong>medicina epigenética</strong> es la aplicación clínica de todo lo
+            anterior. En consulta, un <strong>médico epigenetista</strong> no se detiene en
+            tratar un síntoma aislado con una receta genérica. El enfoque es distinto:
+            entender por qué tu cuerpo está expresando esos síntomas y trabajar sobre las
+            causas que están detrás.
+          </p>
+          <p>
+            Esto se traduce en un acompañamiento que busca <strong>transformar hábitos</strong>
+            de forma sostenible, <strong>restaurar sistemas</strong> que están desequilibrados
+            (digestivo, hormonal, inmune, metabólico) y <strong>educar</strong> a cada paciente
+            para que entienda su propio cuerpo y pueda tomar decisiones informadas el resto de
+            su vida, no solo mientras dura la consulta.
+          </p>
+          <p>
+            Las herramientas que se usan son personalizadas: pueden incluir ajustes de
+            alimentación basados en nutrigenómica, cambios en el manejo del estrés y el sueño,
+            suplementación específica cuando es necesaria, y, en muchos casos, un
+            <a href="/test-epigenetico/">test epigenético</a> que ayuda a partir de datos
+            objetivos en lugar de solo percepciones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         EPIGENÉTICA VS. GENÉTICA
+         ================================================= -->
+    <section class="section" id="epigenetica-vs-genetica" aria-labelledby="vs-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Una confusión muy común</span>
+          <h2 class="section-title" id="vs-title">Epigenética vs. genética: ¿cuál es la diferencia?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Tus genes no cambian. Lo que sí puede cambiar es cómo se expresan.
+          </p>
+        </div>
+
+        <div class="compare-table-wrap reveal">
+          <table class="compare-table">
+            <caption>Comparación entre genética y epigenética</caption>
+            <thead>
+              <tr>
+                <th scope="col">Aspecto</th>
+                <th scope="col">Genética</th>
+                <th scope="col">Epigenética</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Qué estudia</th>
+                <td data-label="Genética">La secuencia fija del ADN que heredas</td>
+                <td data-label="Epigenética">Cómo se activan o silencian esos genes</td>
+              </tr>
+              <tr>
+                <th scope="row">¿Cambia con el tiempo?</th>
+                <td data-label="Genética">No, la secuencia del ADN es prácticamente fija</td>
+                <td data-label="Epigenética">Sí, puede modificarse a lo largo de la vida</td>
+              </tr>
+              <tr>
+                <th scope="row">¿Se puede influir con hábitos?</th>
+                <td data-label="Genética">No de forma directa</td>
+                <td data-label="Epigenética">Sí, alimentación, estrés, sueño y entorno influyen</td>
+              </tr>
+              <tr>
+                <th scope="row">Ejemplo cotidiano</th>
+                <td data-label="Genética">El color de tus ojos, tu tipo de sangre</td>
+                <td data-label="Epigenética">Cómo tu cuerpo responde hoy al estrés o a la inflamación</td>
+              </tr>
+              <tr>
+                <th scope="row">Enfoque en consulta</th>
+                <td data-label="Genética">Antecedentes y predisposiciones heredadas</td>
+                <td data-label="Epigenética">Plan de hábitos, nutrición y seguimiento personalizado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         PUENTE AL TEST EPIGENÉTICO
+         ================================================= -->
+    <section class="section bg-surface" id="conoce-tus-genes" aria-labelledby="conoce-tus-genes-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">De la teoría a tus propios datos</span>
+          <h2 class="section-title" id="conoce-tus-genes-title">¿Cómo saber cómo están tus genes hoy?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="bridge-box reveal">
+          <p>
+            Toda esta información sobre epigenética se vuelve mucho más poderosa cuando se
+            convierte en datos concretos sobre tu propio cuerpo. Para eso existe el
+            <strong>test epigenético</strong>: un análisis de medicina personalizada que mide
+            el impacto real del estrés, la inflamación, tus predisposiciones y tu eficiencia
+            metabólica en este momento de tu vida.
+          </p>
+          <a href="/test-epigenetico/" class="btn btn--primary btn--lg">
+            Conoce el test epigenético paso a paso
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         EPIGENÉTICA EN MEDELLÍN Y COLOMBIA
+         ================================================= -->
+    <section class="section" id="epigenetica-medellin-colombia" aria-labelledby="medellin-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Presencial y virtual</span>
+          <h2 class="section-title" id="medellin-title">Epigenética en Medellín y Colombia</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="prose reveal">
+          <p>
+            La Dra. Erika Piedrahita atiende consulta de <strong>epigenética en Medellín</strong>
+            de forma presencial, y también de manera virtual para pacientes en cualquier
+            ciudad de <strong>Colombia</strong> y en el exterior. Ya sea que prefieras una
+            cita en el consultorio o una videollamada desde donde estés, el enfoque es el
+            mismo: entender tu biología para diseñar contigo un plan realista y sostenible.
+            Conoce más sobre su formación y trayectoria en
+            <a href="/#quien-soy">la sección Quién Soy</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         FAQ
+         ================================================= -->
+    <section class="section bg-surface" id="preguntas-frecuentes" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Resolvemos tus dudas</span>
+          <h2 class="section-title" id="faq-title">Preguntas frecuentes</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>¿La epigenética es ciencia comprobada?</summary>
+            <p>
+              Sí. La epigenética es un campo de la biología molecular con décadas de
+              investigación científica revisada por pares. Estudia mecanismos bien
+              documentados, como la metilación del ADN y la modificación de histonas, que
+              regulan la expresión de los genes sin alterar la secuencia del ADN.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Los cambios epigenéticos se heredan?</summary>
+            <p>
+              Algunas marcas epigenéticas pueden transmitirse entre generaciones, aunque la
+              mayoría se reprograman entre padres e hijos. Es un área activa de
+              investigación. Lo que sí es claro es que las marcas epigenéticas propias no son
+              permanentes: pueden modificarse a lo largo de la vida con cambios sostenidos de
+              hábitos.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿En cuánto tiempo se ven cambios epigenéticos?</summary>
+            <p>
+              Depende de cada persona, del hábito y de la constancia. Algunos marcadores
+              relacionados con inflamación o estrés pueden mostrar cambios en semanas de
+              sostener nuevos hábitos, mientras que otros procesos toman meses. Por eso el
+              seguimiento y el acompañamiento profesional son clave.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿La medicina epigenética reemplaza a mi médico tratante?</summary>
+            <p>
+              No. La medicina epigenética es complementaria a tu tratamiento médico
+              habitual. No sustituye diagnósticos, medicamentos ni el seguimiento de tu
+              médico tratante; trabaja de la mano con ellos para fortalecer tus hábitos y tu
+              bienestar general.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Necesito un test epigenético para empezar?</summary>
+            <p>
+              No es obligatorio, pero es una excelente forma de partir de datos objetivos
+              sobre tu estado actual. Puedes iniciar una consulta de epigenética sin test, y
+              valorar más adelante si quieres complementarla con la medición.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué diferencia hay entre epigenética y medicina funcional?</summary>
+            <p>
+              Ambas buscan la raíz de los síntomas en lugar de solo tratarlos, pero la
+              epigenética se enfoca específicamente en cómo tus hábitos y tu entorno
+              modifican la expresión de tus genes, usando esa información como guía para
+              personalizar el plan de nutrición, hábitos y suplementación.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         CTA FINAL
+         ================================================= -->
+    <section class="cta-section" id="cta-final" aria-labelledby="cta-final-title">
+      <div class="container cta-section__inner">
+        <p class="cta-section__eyebrow reveal">Da el primer paso</p>
+        <h2 class="cta-section__title reveal" id="cta-final-title">
+          Tus genes no son tu destino.<br />Empieza a cambiar la conversación.
+        </h2>
+        <p class="cta-section__subtitle reveal">
+          Escríbeme por WhatsApp y te cuento cómo funciona la medicina epigenética, el test
+          epigenético y los servicios que tenemos disponibles para ti.
+        </p>
+        <div class="final-cta-links reveal">
+          <a
+            href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20saber%20m%C3%A1s%20sobre%20medicina%20epigen%C3%A9tica"
+            class="btn btn--whatsapp btn--lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <!-- WhatsApp icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="22" height="22">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Escríbeme por WhatsApp
+          </a>
+          <a href="/test-epigenetico/" class="btn btn--dark-outline btn--lg">
+            Ver el Test Epigenético
+          </a>
+          <a href="/#servicios" class="btn btn--dark-outline btn--lg">
+            Ver Servicios
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer" role="contentinfo" id="footer">
+    <div class="container">
+      <div class="footer__main">
+
+        <!-- Brand column -->
+        <div class="footer__brand">
+          <p class="footer__brand-name">Dra. Erika Piedrahita</p>
+          <p class="footer__brand-tagline">Médica Epigenética · Medellín, Colombia</p>
+          <p class="footer__brand-desc">
+            Transformando la salud de las personas desde la raíz, a través de la epigenética,
+            nutrigenómica y medicina del estilo de vida. Ciencia personalizada al servicio de tu bienestar.
+          </p>
+          <!-- Social icons -->
+          <div class="footer__social" role="list" aria-label="Redes sociales">
+            <a href="https://www.instagram.com/dra.erikapiedrahita/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@Dra_erikapiedrahita" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.8a8.18 8.18 0 004.77 1.52V6.89a4.85 4.85 0 01-1-.2z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/573002228514" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@Draerikapiedrahita/videos" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav column -->
+        <div>
+          <h3 class="footer__col-title">Navegación</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/"                  class="footer__link">Inicio</a></li>
+            <li><a href="/#quien-soy"        class="footer__link">Quién Soy</a></li>
+            <li><a href="/epigenetica/"      class="footer__link">Epigenética</a></li>
+            <li><a href="/#servicios"        class="footer__link">Servicios</a></li>
+            <li><a href="/test-epigenetico/" class="footer__link">Test Epigenético</a></li>
+            <li><a href="/#aprende"          class="footer__link">Aprende</a></li>
+            <li><a href="/#contacto"         class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div>
+          <h3 class="footer__col-title">Contacto</h3>
+          <ul class="footer__links" role="list">
+            <li>
+              <a href="https://wa.me/573002228514" class="footer__link" target="_blank" rel="noopener noreferrer">
+                WhatsApp: +57 300 222 8514
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dra.erikapiedrahita/" class="footer__link" target="_blank" rel="noopener noreferrer">
+                @dra.erikapiedrahita
+              </a>
+            </li>
+            <li>
+              <span class="footer__link">Medellín, Antioquia</span>
+            </li>
+            <li>
+              <span class="footer__link">Lunes a Viernes · 8am – 6pm</span>
+            </li>
+            <li style="margin-top: var(--space-4);">
+              <a
+                href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20agendar%20una%20cita"
+                class="btn btn--primary btn--sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar cita
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer__main -->
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="footer-year"></span> Dra. Erika Piedrahita. Todos los derechos reservados.
+        </p>
+        <nav class="footer__legal" aria-label="Políticas legales">
+          <a href="/">Política de Privacidad</a>
+          <a href="/">Términos de Uso</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       FLOATING WHATSAPP BUTTON
+       ===================================================== -->
+  <a
+    href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20saber%20m%C3%A1s%20sobre%20medicina%20epigen%C3%A9tica"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chatea con nosotros por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Volver al inicio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- =====================================================
+       SCRIPTS
+       ===================================================== -->
+  <script>
+    // Dynamic copyright year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/js/main.js" defer></script>
+
+</body>
+</html>

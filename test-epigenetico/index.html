@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <!-- =====================================================
+       META & SEO
+       ===================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Test Epigenético Medellín y Colombia — Dra. Erika Piedrahita</title>
+  <meta name="description" content="Test epigenético en Medellín y Colombia: descubre cómo tu estilo de vida activa tus genes con la Dra. Erika Piedrahita. Presencial o virtual." />
+  <meta name="keywords" content="test epigenético, test epigenético Medellín, test epigenético Colombia, qué es un test epigenético, test de epigenética, epigenética, nutrigenómica, Erika Piedrahita" />
+  <meta name="author" content="Dra. Erika Piedrahita" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.draerikapiedrahita.com/test-epigenetico/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.draerikapiedrahita.com/test-epigenetico/" />
+  <meta property="og:title"       content="Test Epigenético en Medellín y Online — Dra. Erika Piedrahita" />
+  <meta property="og:description" content="Descubre cómo tu estilo de vida y entorno están hablando con tus genes. Test epigenético con la Dra. Erika Piedrahita, presencial o virtual." />
+  <meta property="og:image"       content="https://www.draerikapiedrahita.com/assets/img/og-image.png" />
+  <meta property="og:locale"      content="es_CO" />
+  <meta property="og:site_name"   content="Dra. Erika Piedrahita" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:url"         content="https://www.draerikapiedrahita.com/test-epigenetico/" />
+  <meta name="twitter:title"       content="Test Epigenético — Dra. Erika Piedrahita" />
+  <meta name="twitter:description" content="Qué es, qué mide y cómo funciona el test epigenético. Modalidad presencial en Medellín o virtual en toda Colombia." />
+  <meta name="twitter:image"       content="https://www.draerikapiedrahita.com/assets/img/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+
+  <!-- Page-specific styles (small additions on top of the shared design system) -->
+  <style>
+    /* Los CTA de esta página tienen textos largos: en pantallas
+       angostas deben poder partirse en varias líneas. */
+    @media (max-width: 700px) {
+      .btn {
+        white-space: normal;
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    /* Compact hero for this landing page */
+    .hero.page-hero {
+      min-height: auto;
+      padding-block: var(--space-16) var(--space-20);
+    }
+    @media (max-width: 600px) {
+      .hero.page-hero { padding-block: var(--space-10) var(--space-12); }
+    }
+
+    /* Breadcrumb */
+    .breadcrumb-bar {
+      background-color: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      padding-block: var(--space-3);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+    .breadcrumb-nav a { color: var(--color-primary); font-weight: 600; }
+    .breadcrumb-nav a:hover { color: var(--color-primary-dark); }
+    .breadcrumb-nav span { color: var(--color-text); font-weight: 600; }
+
+    /* Prose blocks */
+    .prose {
+      max-width: 760px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .prose p {
+      font-size: var(--text-lg);
+      line-height: 1.8;
+      color: var(--color-text-muted);
+    }
+    .prose p strong { color: var(--color-text); font-weight: 600; }
+    .prose a { color: var(--color-primary-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+    .prose a:hover { color: var(--color-primary); }
+
+    /* "Qué mide" grid — reuses .epi-card look */
+    .measures__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    @media (max-width: 900px) {
+      .measures__grid { grid-template-columns: 1fr 1fr; max-width: 700px; margin-inline: auto; }
+    }
+    @media (max-width: 600px) {
+      .measures__grid { grid-template-columns: 1fr; max-width: 420px; }
+    }
+
+    /* Steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-8) var(--space-6);
+      max-width: 1100px;
+      margin-inline: auto;
+    }
+    @media (max-width: 900px) {
+      .steps-grid { grid-template-columns: repeat(2, 1fr); max-width: 600px; }
+    }
+    @media (max-width: 560px) {
+      .steps-grid { grid-template-columns: 1fr; max-width: 340px; }
+    }
+    .step { text-align: center; }
+    .step__num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: var(--text-xl);
+      margin: 0 auto var(--space-4);
+      box-shadow: 0 4px 14px rgba(196,168,130,0.35);
+    }
+    .step__title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-2);
+      color: var(--color-text);
+    }
+    .step__text {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* Audience list */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4) var(--space-8);
+      max-width: 900px;
+      margin-inline: auto;
+    }
+    @media (max-width: 700px) {
+      .audience-grid { grid-template-columns: 1fr; }
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      max-width: 800px;
+      margin-inline: auto;
+    }
+    .faq-item {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-item summary {
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: var(--text-lg);
+      color: var(--color-text);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      line-height: 1;
+      color: var(--color-primary);
+      flex-shrink: 0;
+      transition: transform var(--transition-fast);
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p {
+      margin-top: var(--space-3);
+      color: var(--color-text-muted);
+      font-size: var(--text-base);
+      line-height: 1.75;
+    }
+
+    .final-cta-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Pricing CTA */
+    .pricing-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: var(--space-2);
+    }
+
+    /* Coverage cities (Colombia) */
+    .coverage-cities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-3);
+      max-width: 800px;
+      margin-inline: auto;
+    }
+    .coverage-city {
+      display: inline-flex;
+      align-items: center;
+      padding: var(--space-2) var(--space-4);
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full, 999px);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-text);
+    }
+  </style>
+
+  <!-- Structured Data — Test Epigenético -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Test Epigenético en Medellín y Online — Dra. Erika Piedrahita",
+      "url": "https://www.draerikapiedrahita.com/test-epigenetico/",
+      "description": "Qué es un test epigenético, qué mide, cómo funciona y para quién es. Modalidad presencial en Medellín o virtual en toda Colombia con la Dra. Erika Piedrahita.",
+      "inLanguage": "es",
+      "lastReviewed": "2026-08-18",
+      "mainEntity": {
+        "@type": "MedicalTest",
+        "name": "Test Epigenético",
+        "alternateName": "Test de Epigenética",
+        "description": "El test epigenético es una herramienta de medicina personalizada que analiza cómo el estilo de vida y el entorno interactúan con la genética de una persona, evaluando el impacto del estrés, la inflamación, las predisposiciones y la eficiencia metabólica. No modifica el ADN: mide cómo se está expresando.",
+        "usedToDiagnose": {
+          "@type": "MedicalCondition",
+          "name": "Desequilibrios relacionados con estrés, inflamación y estilo de vida"
+        },
+        "affectedBy": ["Estrés", "Alimentación", "Sueño", "Actividad física", "Exposición ambiental"],
+        "areaServed": [
+          { "@type": "City", "name": "Medellín" },
+          { "@type": "Country", "name": "Colombia" }
+        ],
+        "provider": {
+          "@type": "Physician",
+          "name": "Dra. Erika Piedrahita",
+          "url": "https://www.draerikapiedrahita.com",
+          "telephone": "+573002228514",
+          "image": "https://www.draerikapiedrahita.com/assets/img/og-image.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Medellín",
+            "addressRegion": "Antioquia",
+            "addressCountry": "CO"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Medellín" },
+            { "@type": "Country", "name": "Colombia" }
+          ],
+          "medicalSpecialty": "Epigenética y Medicina Integrativa",
+          "availableService": {
+            "@type": "MedicalTest",
+            "name": "Test Epigenético",
+            "areaServed": [
+              { "@type": "City", "name": "Medellín" },
+              { "@type": "Country", "name": "Colombia" }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es exactamente un test epigenético?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una herramienta de medicina personalizada que analiza cómo tu estilo de vida y tu entorno están interactuando con tu genética. Evalúa aspectos como el impacto del estrés, los niveles de inflamación, las predisposiciones y tu eficiencia metabólica. No modifica ni analiza tu ADN fijo: mide cómo se está expresando en este momento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se toma la muestra para el test epigenético?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La toma de muestra es sencilla y no invasiva. Puede hacerse de forma presencial en el consultorio en Medellín, o a través de un kit que se envía a tu domicilio si tomas la consulta de forma virtual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cada cuánto se recomienda repetir el test epigenético?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de cada caso y del plan que se defina en consulta. Como la expresión de tus genes cambia con tus hábitos, es común repetirlo después de un período de acompañamiento para ver cómo ha evolucionado tu cuerpo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El test incluye un plan personalizado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El servicio incluye la lectura de tus resultados junto con la Dra. Erika y el diseño de un plan personalizado de nutrición, hábitos y suplementación basado en lo que revela tu test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es lo mismo que un test genético?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Un test genético analiza tu ADN, que es fijo y no cambia. El test epigenético analiza la expresión de tus genes, que sí está influida por tu estilo de vida y puede evolucionar con el tiempo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta el test epigenético en Colombia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El valor depende del panel de marcadores que se recomiende para tu caso y de la modalidad, presencial en Medellín o virtual en el resto de Colombia. La inversión incluye el test, la lectura de tus resultados con la Dra. Erika, el diseño de tu plan personalizado de nutrición, hábitos y suplementación, y el seguimiento de tu proceso. Escríbenos por WhatsApp y te damos el valor exacto para tu caso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo hacerme el test epigenético si no vivo en Medellín?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Si vives en Bogotá, Cali, Barranquilla, Cartagena, Bucaramanga, cualquier otra ciudad de Colombia o en el exterior, puedes hacer el proceso de forma virtual: recibes el kit de toma de muestra en tu domicilio y la lectura de resultados se hace por videollamada, con el mismo acompañamiento que en la consulta presencial en Medellín."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.draerikapiedrahita.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Test Epigenético",
+          "item": "https://www.draerikapiedrahita.com/test-epigenetico/"
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       TOPBAR
+       ===================================================== -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <!-- Left: social links -->
+      <div class="topbar__links">
+        <a href="https://wa.me/573002228514" class="topbar__link" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+          <!-- WhatsApp icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/dra.erikapiedrahita/" class="topbar__link" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro Instagram">
+          <!-- Instagram icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+      <!-- Right: hours -->
+      <div class="topbar__hours">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+        Lun–Vie 8am–6pm
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       NAVBAR (Sticky)
+       ===================================================== -->
+  <header class="navbar" role="banner">
+    <nav class="container navbar__inner" aria-label="Navegación principal">
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="Inicio — Dra. Erika Piedrahita">
+        <img src="/assets/img/IMG_6680.PNG" alt="Logo Dra. Erika Piedrahita" class="navbar__logo-img" width="360" height="120" />
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">Dra. Erika Piedrahita</span>
+          <span class="navbar__logo-title">Médica Epigenética</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="navbar__nav" role="list">
+        <li><a href="/"                    class="navbar__nav-link">Inicio</a></li>
+        <li><a href="/#quien-soy"          class="navbar__nav-link">Quién Soy</a></li>
+        <li><a href="/#epigenetica"        class="navbar__nav-link">Epigenética</a></li>
+        <li><a href="/#servicios"          class="navbar__nav-link">Servicios</a></li>
+        <li><a href="/test-epigenetico/"   class="navbar__nav-link active" aria-current="page">Test Epigenético</a></li>
+        <li><a href="/#aprende"            class="navbar__nav-link">Aprende</a></li>
+        <li><a href="/#contacto"           class="navbar__nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <div class="navbar__actions">
+        <a href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          <!-- Calendar icon -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8"  y1="2" x2="8"  y2="6"/>
+            <line x1="3"  y1="10" x2="21" y2="10"/>
+          </svg>
+          Agendar Cita
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar__hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Menú móvil">
+      <ul class="navbar__mobile-links" role="list">
+        <li><a href="/"                  class="navbar__mobile-link">Inicio</a></li>
+        <li><a href="/#quien-soy"        class="navbar__mobile-link">Quién Soy</a></li>
+        <li><a href="/#epigenetica"      class="navbar__mobile-link">Epigenética</a></li>
+        <li><a href="/#servicios"        class="navbar__mobile-link">Servicios</a></li>
+        <li><a href="/test-epigenetico/" class="navbar__mobile-link" aria-current="page">Test Epigenético</a></li>
+        <li><a href="/#aprende"          class="navbar__mobile-link">Aprende</a></li>
+        <li><a href="/#contacto"         class="navbar__mobile-link">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn btn--primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener noreferrer">
+        Agendar Cita
+      </a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">Test Epigenético</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+  <main id="main-content">
+
+    <!-- =================================================
+         HERO
+         ================================================= -->
+    <section class="hero page-hero" aria-label="Test Epigenético">
+      <div class="container hero__inner">
+
+        <!-- Badge -->
+        <div class="hero__badge animate-fadeInUp">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Test Epigenético · Medellín y Online
+        </div>
+
+        <!-- Heading -->
+        <h1 class="hero__title animate-fadeInUp delay-200">
+          Test Epigenético: descubre cómo tu<br />
+          estilo de vida está hablando<br />
+          con <em>tus genes</em>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero__subtitle animate-fadeInUp delay-300">
+          Un análisis de medicina personalizada que revela cómo el estrés, la
+          alimentación, el sueño y tu entorno están influyendo en la expresión de
+          tus genes hoy. Disponible presencial en Medellín o virtual en toda Colombia.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__cta-group animate-fadeInUp delay-400">
+          <a href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20test%20epigen%C3%A9tico" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <!-- WhatsApp icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Quiero información sobre el test
+          </a>
+          <a href="#que-es" class="btn btn--secondary btn--lg">
+            ¿Qué es?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================
+         QUÉ ES
+         ================================================= -->
+    <section class="section" id="que-es" aria-labelledby="que-es-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Medicina personalizada</span>
+          <h2 class="section-title" id="que-es-title">¿Qué es un test epigenético?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="prose reveal">
+          <p>
+            El <strong>test epigenético</strong> es una herramienta de medicina personalizada
+            que analiza cómo tu <strong>estilo de vida y tu entorno</strong> están interactuando
+            con tu genética en este momento. Su base es la
+            <a href="/epigenetica/">epigenética</a>, la ciencia que estudia cómo tus hábitos y tu
+            entorno activan o silencian la expresión de tus genes sin modificar tu ADN. A
+            diferencia de un test genético tradicional, no mira tu ADN como algo fijo: mide cómo
+            se está <strong>expresando</strong> hoy, según tus hábitos de alimentación, sueño,
+            movimiento y manejo del estrés.
+          </p>
+          <p>
+            Con este análisis evaluamos aspectos como el <strong>impacto del estrés</strong>
+            en tu cuerpo, tus <strong>niveles de inflamación</strong>, ciertas
+            <strong>predisposiciones</strong> heredadas y tu <strong>eficiencia metabólica</strong>.
+            Es información que te permite entender, con base científica, por qué te sientes
+            como te sientes y qué puedes ajustar para sentirte mejor.
+          </p>
+          <p>
+            Como dice la Dra. Erika: <em>tus genes no son tu destino</em>. El test epigenético es
+            el punto de partida para saber, de manera objetiva, dónde está parado tu cuerpo hoy
+            y diseñar contigo un plan realista para transformarlo, ya vivas en Medellín o en
+            cualquier otra ciudad de Colombia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         QUÉ MIDE
+         ================================================= -->
+    <section class="section epigenetics" id="que-mide" aria-labelledby="que-mide-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Un mapa de tu biología actual</span>
+          <h2 class="section-title" id="que-mide-title">¿Qué mide el test epigenético?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            El test epigenético analiza distintas áreas de tu salud para darte una visión
+            completa de cómo está funcionando tu cuerpo hoy.
+          </p>
+        </div>
+
+        <div class="measures__grid">
+
+          <article class="epi-card reveal" data-delay="0">
+            <div class="epi-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="epi-card__title">Estrés y cortisol</h3>
+            <p class="epi-card__text">
+              Cómo está respondiendo tu cuerpo al estrés crónico y qué tanto está
+              afectando tu equilibrio hormonal y tu energía diaria.
+            </p>
+          </article>
+
+          <article class="epi-card reveal" data-delay="100">
+            <div class="epi-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="epi-card__title">Inflamación</h3>
+            <p class="epi-card__text">
+              Niveles de inflamación de bajo grado que pueden estar detrás de fatiga,
+              malestar persistente o dificultad para recuperarte.
+            </p>
+          </article>
+
+          <article class="epi-card reveal" data-delay="200">
+            <div class="epi-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+            </div>
+            <h3 class="epi-card__title">Metabolismo y nutrición</h3>
+            <p class="epi-card__text">
+              Qué tan eficiente es tu metabolismo y cómo tu cuerpo aprovecha los
+              nutrientes que consumes en tu día a día.
+            </p>
+          </article>
+
+          <article class="epi-card reveal" data-delay="0">
+            <div class="epi-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="epi-card__title">Sueño y descanso</h3>
+            <p class="epi-card__text">
+              La calidad de tu recuperación nocturna y su relación con la expresión
+              de genes asociados al descanso y la regeneración.
+            </p>
+          </article>
+
+          <article class="epi-card reveal" data-delay="100">
+            <div class="epi-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/>
+              </svg>
+            </div>
+            <h3 class="epi-card__title">Exposición ambiental</h3>
+            <p class="epi-card__text">
+              Cómo hábitos y factores de tu entorno pueden influir en la expresión
+              de tus genes con el paso del tiempo.
+            </p>
+          </article>
+
+          <article class="epi-card reveal" data-delay="200">
+            <div class="epi-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 3c4 2 8 2 12 0M2 3v2c4-2 8-2 12 0v-2M2 5c4 2 8 2 12 0v2c-4-2-8-2-12 0M14 5v2"/>
+                <path d="M2 9c4 2 8 2 12 0M2 9v2c4-2 8-2 12 0v-2M2 11c4 2 8 2 12 0v2c-4-2-8-2-12 0"/>
+                <path d="M2 15c4 2 8 2 12 0M2 15v2c4-2 8-2 12 0v-2M2 17c4 2 8 2 12 0v2c-4-2-8-2-12 0"/>
+              </svg>
+            </div>
+            <h3 class="epi-card__title">Predisposición genética</h3>
+            <p class="epi-card__text">
+              Patrones de expresión relacionados con antecedentes familiares, para
+              que puedas anticiparte y actuar con información real.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         CÓMO FUNCIONA
+         ================================================= -->
+    <section class="section" id="como-funciona" aria-labelledby="como-funciona-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Proceso simple, sin complicaciones</span>
+          <h2 class="section-title" id="como-funciona-title">¿Cómo funciona el test epigenético?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            En cuatro pasos, sin necesidad de procedimientos invasivos ni desplazamientos
+            innecesarios.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step reveal" data-delay="0">
+            <div class="step__num" aria-hidden="true">1</div>
+            <h3 class="step__title">Agenda por WhatsApp</h3>
+            <p class="step__text">Me cuentas tu caso, resolvemos tus dudas iniciales y agendamos tu cita.</p>
+          </div>
+          <div class="step reveal" data-delay="100">
+            <div class="step__num" aria-hidden="true">2</div>
+            <h3 class="step__title">Toma de muestra sencilla</h3>
+            <p class="step__text">Presencial en el consultorio en Medellín, o con un kit enviado a tu domicilio si eliges la modalidad virtual.</p>
+          </div>
+          <div class="step reveal" data-delay="200">
+            <div class="step__num" aria-hidden="true">3</div>
+            <h3 class="step__title">Análisis de laboratorio</h3>
+            <p class="step__text">Tu muestra se procesa con tecnología especializada para evaluar tus marcadores epigenéticos.</p>
+          </div>
+          <div class="step reveal" data-delay="300">
+            <div class="step__num" aria-hidden="true">4</div>
+            <h3 class="step__title">Lectura + plan personalizado</h3>
+            <p class="step__text">Nos reunimos para interpretar tus resultados y diseñar tu plan de nutrición, hábitos y suplementación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         CUÁNTO CUESTA
+         ================================================= -->
+    <section class="section" id="precio-test-epigenetico" aria-labelledby="precio-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Transparencia ante todo</span>
+          <h2 class="section-title" id="precio-title">¿Cuánto cuesta el test epigenético en Colombia?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            No manejamos una tarifa única: el valor depende del panel de marcadores que se
+            recomiende para tu caso y de si eliges la modalidad presencial en Medellín o la
+            virtual disponible en toda Colombia. Esto es lo que sí sabemos que incluye siempre
+            la inversión.
+          </p>
+        </div>
+
+        <ul class="audience-grid reveal about__credentials" aria-label="Qué incluye la inversión del test epigenético">
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            El test epigenético y su procesamiento en laboratorio
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            La lectura e interpretación de tus resultados junto con la Dra. Erika
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            El diseño de tu plan personalizado de nutrición, hábitos y suplementación
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            El acompañamiento y seguimiento de tu proceso
+          </li>
+        </ul>
+
+        <div class="prose reveal">
+          <p>
+            Como el panel y la profundidad del análisis se ajustan a cada persona, el precio
+            final del test epigenético se confirma en tu consulta inicial, una vez la Dra.
+            Erika entiende qué necesitas evaluar. Escríbenos por WhatsApp, cuéntanos tu caso
+            y te damos el valor exacto para tu proceso en Medellín o en cualquier otra ciudad
+            de Colombia, sin compromiso.
+          </p>
+        </div>
+
+        <div class="pricing-cta reveal">
+          <a
+            href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20consultar%20el%20precio%20del%20test%20epigen%C3%A9tico"
+            class="btn btn--whatsapp btn--lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <!-- WhatsApp icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="22" height="22">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Consultar precio del test epigenético
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         PARA QUIÉN ES
+         ================================================= -->
+    <section class="section bg-surface" id="para-quien" aria-labelledby="para-quien-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">¿Es para ti?</span>
+          <h2 class="section-title" id="para-quien-title">¿Para quién es el test epigenético?</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            El test epigenético puede ser un buen punto de partida si te identificas con
+            alguna de estas situaciones.
+          </p>
+        </div>
+
+        <ul class="audience-grid reveal about__credentials" aria-label="Para quién es el test epigenético">
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            Sientes fatiga persistente sin una causa clara
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            Tienes molestias digestivas recurrentes
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            Tienes antecedentes familiares que quieres prevenir a tiempo
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            Buscas optimizar tu rendimiento físico y mental
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            Quieres entender tu biología para tomar decisiones informadas
+          </li>
+          <li class="about__credential">
+            <span class="about__credential-dot" aria-hidden="true"></span>
+            Ya probaste dietas o rutinas genéricas sin resultados sostenibles
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =================================================
+         COBERTURA EN COLOMBIA
+         ================================================= -->
+    <section class="section" id="cobertura-colombia" aria-labelledby="cobertura-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Presencial y virtual</span>
+          <h2 class="section-title" id="cobertura-title">Test epigenético en toda Colombia</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="prose reveal">
+          <p>
+            La Dra. Erika Piedrahita atiende de forma <strong>presencial en Medellín</strong>, en
+            su consultorio, y de forma <strong>virtual en el resto de Colombia</strong>: Bogotá,
+            Cali, Barranquilla, Cartagena, Bucaramanga y cualquier otra ciudad del país, además
+            de pacientes que viven en el exterior.
+          </p>
+          <p>
+            El proceso a distancia es igual de completo que el presencial: recibes un kit para
+            la toma de muestra en tu domicilio y, después, la lectura de tus resultados y el
+            diseño de tu plan personalizado se hacen por videollamada, con el mismo
+            acompañamiento que si estuvieras en el consultorio en Medellín.
+          </p>
+        </div>
+
+        <div class="coverage-cities reveal" aria-label="Ciudades donde está disponible el test epigenético">
+          <span class="coverage-city">Medellín · presencial</span>
+          <span class="coverage-city">Bogotá</span>
+          <span class="coverage-city">Cali</span>
+          <span class="coverage-city">Barranquilla</span>
+          <span class="coverage-city">Cartagena</span>
+          <span class="coverage-city">Bucaramanga</span>
+          <span class="coverage-city">Resto de Colombia</span>
+          <span class="coverage-city">Exterior</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         FAQ
+         ================================================= -->
+    <section class="section" id="preguntas-frecuentes" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">Resolvemos tus dudas</span>
+          <h2 class="section-title" id="faq-title">Preguntas frecuentes</h2>
+          <div class="divider centered" aria-hidden="true"></div>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>¿Qué es exactamente un test epigenético?</summary>
+            <p>
+              Es una herramienta de medicina personalizada que analiza cómo tu estilo de
+              vida y tu entorno están interactuando con tu genética. Evalúa aspectos como
+              el impacto del estrés, los niveles de inflamación, las predisposiciones y tu
+              eficiencia metabólica. No modifica ni analiza tu ADN fijo: mide cómo se está
+              expresando en este momento.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cómo se toma la muestra para el test epigenético?</summary>
+            <p>
+              La toma de muestra es sencilla y no invasiva. Puede hacerse de forma
+              presencial en el consultorio en Medellín, o a través de un kit que se envía
+              a tu domicilio si tomas la consulta de forma virtual.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cada cuánto se recomienda repetir el test epigenético?</summary>
+            <p>
+              Depende de cada caso y del plan que se defina en consulta. Como la expresión
+              de tus genes cambia con tus hábitos, es común repetirlo después de un período
+              de acompañamiento para ver cómo ha evolucionado tu cuerpo.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿El test incluye un plan personalizado?</summary>
+            <p>
+              Sí. El servicio incluye la lectura de tus resultados junto con la Dra. Erika
+              y el diseño de un plan personalizado de nutrición, hábitos y suplementación
+              basado en lo que revela tu test.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Es lo mismo que un test genético?</summary>
+            <p>
+              No. Un test genético analiza tu ADN, que es fijo y no cambia. El test
+              epigenético analiza la expresión de tus genes, que sí está influida por tu
+              estilo de vida y puede evolucionar con el tiempo.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cuánto cuesta el test epigenético en Colombia?</summary>
+            <p>
+              El valor depende del panel de marcadores que se recomiende para tu caso y de la
+              modalidad, presencial en Medellín o virtual en el resto de Colombia. La inversión
+              incluye el test, la lectura de tus resultados con la Dra. Erika, el diseño de tu
+              plan personalizado de nutrición, hábitos y suplementación, y el seguimiento de tu
+              proceso. Escríbenos por WhatsApp y te damos el valor exacto para tu caso.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo hacerme el test epigenético si no vivo en Medellín?</summary>
+            <p>
+              Sí. Si vives en Bogotá, Cali, Barranquilla, Cartagena, Bucaramanga, cualquier otra
+              ciudad de Colombia o en el exterior, puedes hacer el proceso de forma virtual:
+              recibes el kit de toma de muestra en tu domicilio y la lectura de resultados se
+              hace por videollamada, con el mismo acompañamiento que en la consulta presencial
+              en Medellín.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         CTA FINAL
+         ================================================= -->
+    <section class="cta-section" id="cta-final" aria-labelledby="cta-final-title">
+      <div class="container cta-section__inner">
+        <p class="cta-section__eyebrow reveal">Da el primer paso</p>
+        <h2 class="cta-section__title reveal" id="cta-final-title">
+          ¿Lista para conocer qué están<br />diciendo tus genes?
+        </h2>
+        <p class="cta-section__subtitle reveal">
+          Escríbeme por WhatsApp y te cuento cómo funciona el test epigenético, sus
+          modalidades y qué incluye tu plan personalizado.
+        </p>
+        <div class="final-cta-links reveal">
+          <a
+            href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20agendar%20mi%20test%20epigen%C3%A9tico"
+            class="btn btn--whatsapp btn--lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <!-- WhatsApp icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="22" height="22">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Agendar mi Test Epigenético
+          </a>
+          <a href="/#quien-soy" class="btn btn--dark-outline btn--lg">
+            Conoce más sobre la Dra. Erika
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer" role="contentinfo" id="footer">
+    <div class="container">
+      <div class="footer__main">
+
+        <!-- Brand column -->
+        <div class="footer__brand">
+          <p class="footer__brand-name">Dra. Erika Piedrahita</p>
+          <p class="footer__brand-tagline">Médica Epigenética · Medellín, Colombia</p>
+          <p class="footer__brand-desc">
+            Transformando la salud de las personas desde la raíz, a través de la epigenética,
+            nutrigenómica y medicina del estilo de vida. Ciencia personalizada al servicio de tu bienestar.
+          </p>
+          <!-- Social icons -->
+          <div class="footer__social" role="list" aria-label="Redes sociales">
+            <a href="https://www.instagram.com/dra.erikapiedrahita/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@Dra_erikapiedrahita" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.8a8.18 8.18 0 004.77 1.52V6.89a4.85 4.85 0 01-1-.2z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/573002228514" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@Draerikapiedrahita/videos" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube" role="listitem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav column -->
+        <div>
+          <h3 class="footer__col-title">Navegación</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/"                  class="footer__link">Inicio</a></li>
+            <li><a href="/#quien-soy"        class="footer__link">Quién Soy</a></li>
+            <li><a href="/#epigenetica"      class="footer__link">Epigenética</a></li>
+            <li><a href="/#servicios"        class="footer__link">Servicios</a></li>
+            <li><a href="/test-epigenetico/" class="footer__link">Test Epigenético</a></li>
+            <li><a href="/#aprende"          class="footer__link">Aprende</a></li>
+            <li><a href="/#contacto"         class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div>
+          <h3 class="footer__col-title">Contacto</h3>
+          <ul class="footer__links" role="list">
+            <li>
+              <a href="https://wa.me/573002228514" class="footer__link" target="_blank" rel="noopener noreferrer">
+                WhatsApp: +57 300 222 8514
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dra.erikapiedrahita/" class="footer__link" target="_blank" rel="noopener noreferrer">
+                @dra.erikapiedrahita
+              </a>
+            </li>
+            <li>
+              <span class="footer__link">Medellín, Antioquia</span>
+            </li>
+            <li>
+              <span class="footer__link">Lunes a Viernes · 8am – 6pm</span>
+            </li>
+            <li style="margin-top: var(--space-4);">
+              <a
+                href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20agendar%20una%20cita"
+                class="btn btn--primary btn--sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar cita
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer__main -->
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="footer-year"></span> Dra. Erika Piedrahita. Todos los derechos reservados.
+        </p>
+        <nav class="footer__legal" aria-label="Políticas legales">
+          <a href="/">Política de Privacidad</a>
+          <a href="/">Términos de Uso</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       FLOATING WHATSAPP BUTTON
+       ===================================================== -->
+  <a
+    href="https://wa.me/573002228514?text=Hola%20Dra.%20Erika%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20test%20epigen%C3%A9tico"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chatea con nosotros por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Volver al inicio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- =====================================================
+       SCRIPTS
+       ===================================================== -->
+  <script>
+    // Dynamic copyright year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/js/main.js" defer></script>
+
+</body>
+</html>
